@@ -1,15 +1,22 @@
-import axios from 'axios';
-import './App.css';
+import { useState } from 'react';
+import './css/App.css';
+import './css/Background.css'
+import Api from './Api/Api';
 
-// api 287b2a1c5e56ff945a281d282236b623
+
 function App() {
-  const API_ADDRESS = "287b2a1c5e56ff945a281d282236b623"
-  const url =`https://api.openweathermap.org/data/2.5/weather?q=Busan&appid=${API_ADDRESS}`
+  const [weather,setWeather] = useState({
+    temp : 0,
+    temp_min : '',
+    temp_max : '',
+  })
 
-  axios.get(url).then(response => console.log(response))
   return (
-    <div className='base'>
-      
+    <div className='main'>
+      <Api setWeather={setWeather}/>
+      <div id='temp'>
+        <h1>{weather.temp}</h1>
+      </div>
     </div>
   );
 }
