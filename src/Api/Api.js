@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 const Api = ({setWeather}) => {
 
   const API_ADDRESS = "287b2a1c5e56ff945a281d282236b623"
-  const url =`https://api.openweathermap.org/data/2.5/weather?q=Seoul,kr&appid=${API_ADDRESS}`
+  const url =`https://api.openweathermap.org/data/2.5/weather?q=Busan,kr&appid=${API_ADDRESS}`
 
   useEffect(() => {
     axios.get(url)

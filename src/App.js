@@ -15,7 +15,8 @@ function App() {
     <div className='main'>
       <Api setWeather={setWeather}/>
       <div id='temp'>
-        <h1>{weather.temp}</h1>
+        <h1>부산광역시</h1>
+        <h2>{weather.temp}℃</h2>
       </div>
     </div>
   );
