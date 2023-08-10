@@ -1,0 +1,34 @@
+#MainBox-layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#MainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.18),
+    -2px -2px 4px rgba(0, 0, 0, 0.18),
+    0px 2px 4px rgba(0, 0, 0, 0.18),
+    0px -2px 4px rgba(0, 0, 0, 0.18);
+}
+#MainBox h1 {
+  font-size: 130px;
+}
+#MainBox h2 {
+  font-size: 40px;
+}
+#MainBox h3 {
+  font-size: 30px;
+}
+#maxmin {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}

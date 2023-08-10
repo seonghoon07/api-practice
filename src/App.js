@@ -1,23 +1,24 @@
 import { useState } from 'react';
 import './css/App.css';
-import './css/Background.css'
 import Api from './Api/Api';
+import MainContent from './components/MainContent';
+import Header from './components/Header';
 
 
 function App() {
   const [weather,setWeather] = useState({
     temp : 0,
-    temp_min : '',
-    temp_max : '',
+    temp_min : 0,
+    temp_max : 0,
+    sky: '',
   })
 
   return (
     <div className='main'>
       <Api setWeather={setWeather}/>
-      <div id='temp'>
-        <h1>부산광역시</h1>
-        <h2>{weather.temp}℃</h2>
-      </div>
+      <Header />
+      <MainContent weather={weather} />
+      
     </div>
   );
 }
