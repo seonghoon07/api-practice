@@ -16,8 +16,14 @@ nav {
   font-size: 23px;
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  border: none;
   border-radius: 5px;
+  list-style:none;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header_button:hover {
   background-color: rgba(0, 0, 0, 0.1);

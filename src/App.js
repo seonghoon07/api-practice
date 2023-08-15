@@ -3,6 +3,7 @@ import './css/App.css';
 import Api from './Api/Api';
 import MainContent from './components/MainContent';
 import Header from './components/Header';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
   })
 
   return (
-    <div className='main'>
-      <Api setWeather={setWeather}/>
-      <Header />
-      <MainContent weather={weather} />
-      
-    </div>
+    <BrowserRouter>
+      <div className='main'>
+        <Api setWeather={setWeather}/>
+        <Header />
+        <MainContent weather={weather} />
+      </div>
+    </BrowserRouter>
   );
 }
 
